@@ -64,8 +64,9 @@ public class BuilderProcessor extends AbstractProcessor {
             for (Element e : element.getEnclosedElements()) {
                 if (e.getKind() == ElementKind.FIELD) {
                     Field field = new Field();
-                    field.setType(e.asType().toString());
+                    field.setType(e.asType());
                     field.setName(e.getSimpleName().toString());
+                    fieldList.add(field);
                 }
             }
 

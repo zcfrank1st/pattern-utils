@@ -1,14 +1,16 @@
 package com.chaos.utils.pattern.code;
 
+import javax.lang.model.type.TypeMirror;
+
 public class Field {
-    private String type;
+    private TypeMirror type;
     private String name;
 
-    public String getType() {
+    public TypeMirror getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(TypeMirror type) {
         this.type = type;
     }
 
